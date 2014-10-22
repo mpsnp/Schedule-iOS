@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		CE42B81319F0FAF30039A3CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42B81219F0FAF30039A3CC /* AppDelegate.swift */; };
 		CE42B81619F0FAF30039A3CC /* Shedule.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE42B81419F0FAF30039A3CC /* Shedule.xcdatamodeld */; };
-		CE42B81819F0FAF30039A3CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42B81719F0FAF30039A3CC /* ViewController.swift */; };
+		CE42B81819F0FAF30039A3CC /* SChooseGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42B81719F0FAF30039A3CC /* SChooseGroupViewController.swift */; };
 		CE42B81B19F0FAF30039A3CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE42B81919F0FAF30039A3CC /* Main.storyboard */; };
 		CE42B81D19F0FAF30039A3CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE42B81C19F0FAF30039A3CC /* Images.xcassets */; };
 		CE42B82019F0FAF30039A3CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE42B81E19F0FAF30039A3CC /* LaunchScreen.xib */; };
 		CE42B82C19F0FAF40039A3CC /* SheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42B82B19F0FAF40039A3CC /* SheduleTests.swift */; };
+		CE42B83719F0FD3B0039A3CC /* SBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42B83619F0FD3B0039A3CC /* SBorderedView.swift */; };
+		CE42B83919F1008B0039A3CC /* SBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42B83819F1008B0039A3CC /* SBorderedButton.swift */; };
+		CE8AEC0519F28C64002612F7 /* SGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AEC0419F28C64002612F7 /* SGroupTableViewCell.swift */; };
+		CE8AEC0819F2ACFF002612F7 /* STeacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AEC0719F2ACFF002612F7 /* STeacher.swift */; };
+		CE8AEC0C19F2AD00002612F7 /* SFaculty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AEC0B19F2AD00002612F7 /* SFaculty.swift */; };
+		CE8AEC0E19F2AD00002612F7 /* SGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AEC0D19F2AD00002612F7 /* SGroup.swift */; };
+		CE8AEC1019F2AD00002612F7 /* SClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AEC0F19F2AD00002612F7 /* SClass.swift */; };
+		CE8AEC1219F2AD48002612F7 /* SDepartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AEC1119F2AD48002612F7 /* SDepartment.swift */; };
+		CE8AEC1619F39AB3002612F7 /* SModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AEC1519F39AB3002612F7 /* SModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +40,22 @@
 		CE42B81119F0FAF30039A3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE42B81219F0FAF30039A3CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE42B81519F0FAF30039A3CC /* Shedule.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shedule.xcdatamodel; sourceTree = "<group>"; };
-		CE42B81719F0FAF30039A3CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE42B81719F0FAF30039A3CC /* SChooseGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SChooseGroupViewController.swift; sourceTree = "<group>"; };
 		CE42B81A19F0FAF30039A3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE42B81C19F0FAF30039A3CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE42B81F19F0FAF30039A3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CE42B82519F0FAF40039A3CC /* SheduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE42B82A19F0FAF40039A3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE42B82B19F0FAF40039A3CC /* SheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheduleTests.swift; sourceTree = "<group>"; };
+		CE42B83619F0FD3B0039A3CC /* SBorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBorderedView.swift; sourceTree = "<group>"; };
+		CE42B83819F1008B0039A3CC /* SBorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBorderedButton.swift; sourceTree = "<group>"; };
+		CE8AEC0419F28C64002612F7 /* SGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGroupTableViewCell.swift; sourceTree = "<group>"; };
+		CE8AEC0719F2ACFF002612F7 /* STeacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STeacher.swift; sourceTree = "<group>"; };
+		CE8AEC0B19F2AD00002612F7 /* SFaculty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFaculty.swift; sourceTree = "<group>"; };
+		CE8AEC0D19F2AD00002612F7 /* SGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGroup.swift; sourceTree = "<group>"; };
+		CE8AEC0F19F2AD00002612F7 /* SClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SClass.swift; sourceTree = "<group>"; };
+		CE8AEC1119F2AD48002612F7 /* SDepartment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDepartment.swift; sourceTree = "<group>"; };
+		CE8AEC1519F39AB3002612F7 /* SModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +97,15 @@
 		CE42B80F19F0FAF30039A3CC /* Shedule */ = {
 			isa = PBXGroup;
 			children = (
+				CE8AEC1419F2AD97002612F7 /* Controllers */,
+				CE8AEC1319F2AD74002612F7 /* Model */,
+				CE8AEC0619F2ACA7002612F7 /* Data Model */,
+				CE8AEC0319F28C14002612F7 /* Cells */,
+				CE42B83519F0FCB10039A3CC /* Views */,
 				CE42B81219F0FAF30039A3CC /* AppDelegate.swift */,
-				CE42B81719F0FAF30039A3CC /* ViewController.swift */,
 				CE42B81919F0FAF30039A3CC /* Main.storyboard */,
 				CE42B81C19F0FAF30039A3CC /* Images.xcassets */,
 				CE42B81E19F0FAF30039A3CC /* LaunchScreen.xib */,
-				CE42B81419F0FAF30039A3CC /* Shedule.xcdatamodeld */,
 				CE42B81019F0FAF30039A3CC /* Supporting Files */,
 			);
 			path = Shedule;
@@ -113,6 +134,52 @@
 				CE42B82A19F0FAF40039A3CC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE42B83519F0FCB10039A3CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE42B83619F0FD3B0039A3CC /* SBorderedView.swift */,
+				CE42B83819F1008B0039A3CC /* SBorderedButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE8AEC0319F28C14002612F7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE8AEC0419F28C64002612F7 /* SGroupTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE8AEC0619F2ACA7002612F7 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE42B81419F0FAF30039A3CC /* Shedule.xcdatamodeld */,
+				CE8AEC0F19F2AD00002612F7 /* SClass.swift */,
+				CE8AEC1119F2AD48002612F7 /* SDepartment.swift */,
+				CE8AEC0D19F2AD00002612F7 /* SGroup.swift */,
+				CE8AEC0B19F2AD00002612F7 /* SFaculty.swift */,
+				CE8AEC0719F2ACFF002612F7 /* STeacher.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		CE8AEC1319F2AD74002612F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE8AEC1519F39AB3002612F7 /* SModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE8AEC1419F2AD97002612F7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE42B81719F0FAF30039A3CC /* SChooseGroupViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +226,7 @@
 		CE42B80519F0FAF30039A3CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = S;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = SMediaLink;
 				TargetAttributes = {
@@ -215,9 +283,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE42B81819F0FAF30039A3CC /* ViewController.swift in Sources */,
+				CE8AEC1219F2AD48002612F7 /* SDepartment.swift in Sources */,
+				CE8AEC0819F2ACFF002612F7 /* STeacher.swift in Sources */,
+				CE42B81819F0FAF30039A3CC /* SChooseGroupViewController.swift in Sources */,
+				CE8AEC1619F39AB3002612F7 /* SModel.swift in Sources */,
+				CE42B83919F1008B0039A3CC /* SBorderedButton.swift in Sources */,
+				CE8AEC0C19F2AD00002612F7 /* SFaculty.swift in Sources */,
 				CE42B81619F0FAF30039A3CC /* Shedule.xcdatamodeld in Sources */,
+				CE8AEC0519F28C64002612F7 /* SGroupTableViewCell.swift in Sources */,
+				CE8AEC0E19F2AD00002612F7 /* SGroup.swift in Sources */,
+				CE8AEC1019F2AD00002612F7 /* SClass.swift in Sources */,
 				CE42B81319F0FAF30039A3CC /* AppDelegate.swift in Sources */,
+				CE42B83719F0FD3B0039A3CC /* SBorderedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -330,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,9 +419,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Shedule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -352,9 +432,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Shedule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -411,6 +494,7 @@
 				CE42B83119F0FAF40039A3CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE42B83219F0FAF40039A3CC /* Build configuration list for PBXNativeTarget "SheduleTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +503,7 @@
 				CE42B83419F0FAF40039A3CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -429,7 +514,8 @@
 				CE42B81519F0FAF30039A3CC /* Shedule.xcdatamodel */,
 			);
 			currentVersion = CE42B81519F0FAF30039A3CC /* Shedule.xcdatamodel */;
-			path = Shedule.xcdatamodeld;
+			name = Shedule.xcdatamodeld;
+			path = ../Shedule.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

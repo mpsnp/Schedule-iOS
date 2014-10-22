@@ -1,4 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="14A389" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SClass" representedClassName="SClass" syncable="YES">
+        <attribute name="cabinet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="week" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="department" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SDepartment" inverseName="classes" inverseEntity="SDepartment" syncable="YES"/>
+        <relationship name="faculty" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SFaculty" inverseName="classes" inverseEntity="SFaculty" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SGroup" inverseName="classes" inverseEntity="SGroup" syncable="YES"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="STeacher" inverseName="classes" inverseEntity="STeacher" syncable="YES"/>
+    </entity>
+    <entity name="SDepartment" representedClassName="SDepartment" syncable="YES">
+        <attribute name="abbreviated" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="classes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SClass" inverseName="department" inverseEntity="SClass" syncable="YES"/>
+        <relationship name="faculty" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SFaculty" inverseName="departments" inverseEntity="SFaculty" syncable="YES"/>
+        <relationship name="teachers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="STeacher" inverseName="department" inverseEntity="STeacher" syncable="YES"/>
+    </entity>
+    <entity name="SFaculty" representedClassName="SFaculty" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="classes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SClass" inverseName="faculty" inverseEntity="SClass" syncable="YES"/>
+        <relationship name="departments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SDepartment" inverseName="faculty" inverseEntity="SDepartment" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SGroup" inverseName="faculty" inverseEntity="SGroup" syncable="YES"/>
+    </entity>
+    <entity name="SGroup" representedClassName="SGroup" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="classes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SClass" inverseName="group" inverseEntity="SClass" syncable="YES"/>
+        <relationship name="faculty" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SFaculty" inverseName="groups" inverseEntity="SFaculty" syncable="YES"/>
+    </entity>
+    <entity name="STeacher" representedClassName="STeacher" syncable="YES">
+        <relationship name="classes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SClass" inverseName="teacher" inverseEntity="SClass" syncable="YES"/>
+        <relationship name="department" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SDepartment" inverseName="teachers" inverseEntity="SDepartment" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SGroup" positionX="351" positionY="225" width="128" height="103"/>
+        <element name="SDepartment" positionX="-18" positionY="-90" width="128" height="133"/>
+        <element name="SClass" positionX="349" positionY="-135" width="128" height="193"/>
+        <element name="STeacher" positionX="160" positionY="63" width="128" height="73"/>
+        <element name="SFaculty" positionX="142" positionY="170" width="128" height="118"/>
+    </elements>
 </model>
